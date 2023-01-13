@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: black;
+        color: white;
+       }
+       #container{
+        display: flex;
+        flex-direction: row;
+
+       }
+       form{
+        width: 10%;
+       }
+        input{
+        margin-top: 15%;
+        padding:15px;
+        border-radius: 10px;
+        
+
+       }
+       #register-form{
+        margin-left: 300px;
+        margin-top: 20px;
+       }
+       button{
+        margin-top:20px;
+        width:21%;
+        border-radius: 10px;
+        background-color: green;
+        padding: 15px;
+        font-size: large;
+        cursor: pointer;
+       }
+       button:hover{
+        background-color: orange;
+        
+       }
+       a[href]{
+        font-size: 40px;
+        color: green;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: sans-serif;
+     }
+     #login-form{
+        margin-right: 20px;
+     }
+     #login-form button{
+        width:65%
+     }
+     #login-form input{
+           margin-top: 15px;
+     }
+     #g{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+     }
+    </style>
+</head>
+<body>
+    <a href="index.html">Hotstar</a>
+    <div id="container">
+        <div id="register-form">
+            <form>
+                <h1>Register</h1>
+                <input type="text" id="name" placeholder="Enter Name">
+                <input type="text" id="email" placeholder="email">
+                <input type="password" id="password" placeholder="password">
+                <input type="text" id="username" placeholder="username">
+                <input type="number" id="mobile" placeholder="mobile Number">
+                <input type="text" id="description" placeholder="description">
+                
+            </form>
+            <button onclick="Register()">Register</button>
+            
+        </div>
+        <div id="login-form">
+            <form>
+                <h1>Login</h1>
+                <input type="text" id="login-username" placeholder="username">
+                <input type="password" id="login-password" placeholder="password">
+                
+            </form>
+            <button onclick="Login()"><a id="g" href="index.html">Login</a></button>
+         </div>
+    </div>
+</body>
+</html>
+<script src="login.js"></script>

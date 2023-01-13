@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #slider img{
+            width:100%;
+            height:400px;
+        }
+        #basic{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+           
+        }
+       body{
+        background-color: black;
+       }
+       p{
+        color: white;
+        text-align: center;
+        font-size: x-large;
+       }
+       #loader{
+        margin-left: 650px;
+       }
+       #buttons{
+        margin-top: 30px;
+        margin-bottom: 30px;
+       }
+       #LH{
+        padding:8px;
+        font-size: large;
+        background-color: rgb(182, 193, 189);
+        margin-left: 10px;
+        border-radius: 10px;
+       }
+       #HL{
+        padding:8px;
+        font-size: large;
+        background-color:rgb(182, 193, 189);
+        margin-left: 10px;
+        border-radius: 10px;
+       }
+       #HL:hover{
+        background-color: orangered;
+        cursor: pointer;
+       }
+       #LH:hover{
+        background-color: orangered;
+       cursor: pointer;
+       }
+        #href{
+        margin-left: 80%;
+        margin-bottom: 20px;
+       } 
+       h1{
+        color: rgb(34, 139, 34);
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+       }
+      #search{
+        padding: 7px;
+        background-color: rgb(182, 193, 189);
+        border-radius: 10px;
+       
+      }
+      #login{
+        padding: 7px;
+        background-color: rgb(182, 193, 189);
+        border-radius: 10px;
+      }
+      #poster{
+       margin-left: 20px;
+      }
+      a[href]{
+        text-decoration: none;
+        font-size: large;
+        color: black;
+      }
+    #search:hover{
+           background-color: rgb(34, 139, 34);
+      }
+      #login:hover{
+        background-color: rgb(34, 139, 34);
+      }
+    </style>
+</head>
+<body>
+    <h1>Hotstar</h1>
+    <div id="href">
+        <button id="search">
+            <a href="search.html">Search Movies</a>
+        </button>
+        <button id="login">
+            <a href="login.html">Login</a>
+        </button>
+        
+    </div>
+    
+    <div id="slider"></div>
+      
+    <div id="buttons">
+        <button onclick="sortLH()"id="LH">Rating:L to H</button>
+        <button onclick="sortHL()" id="HL">Rating:H to L</button>
+    </div>
+
+    <div id="basic">
+        <img id="loader" src="https://media0.giphy.com/media/3o7bu3XilJ5BOiSGic/200w.webp?cid=ecf05e47k6nebzw22j3tpvfrfrdygzlkgcyd0rm3s5g33tqz&rid=200w.webp&ct=g" alt="">
+    </div>
+  
+
+</body>
+</html>
+<script src="home.js"></script>

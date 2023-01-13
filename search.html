@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search movies</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #slider img{
+            width:100%;
+            height:400px;
+        }
+        body{
+            background-color: black;
+        }
+      #query{
+       margin-top: 20px;
+       padding: 10px;
+       width:25%;
+       border-radius: 10px;
+       font-size: large;
+       cursor: pointer;
+      }
+      #movies{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 40px;
+        margin-left:60px;
+        
+      }
+      p{
+        color: white;
+        text-align: center;
+        font-size: large;
+      }
+     img{
+        width:90%;
+        height:450px
+     }
+     #movies #btn{
+        margin-left:190px ;
+        margin-bottom: 30px;
+        padding: 7px;
+        border-radius: 10px;
+        background-color: rgb(50, 189, 105);
+        font-size: large;
+        margin-top: 10px;
+     }
+     #movies #btn:hover{
+        background-color:orangered;
+     }
+     a[href]{
+        font-size: 40px;
+        color: green;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: sans-serif;
+     }
+    </style>
+</head>
+<body>
+    <a href="index.html">Hotstar</a>
+
+    <div id="slider"></div>
+    <div>
+        <!-- <input type="text" id="query">
+        <button onclick="searchMovies()">Search</button> -->
+         <input oninput="debouncing(search,1)" id="query" placeholder="Search Movie">
+    </div>
+    <div id="movies"></div>
+</body>
+</html>
+<script src="search.js"></script>
