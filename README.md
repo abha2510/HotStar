@@ -15,3 +15,9 @@ Teachstack use:
 Hero Image of Movies 
 
 ![image](https://user-images.githubusercontent.com/107466839/217160404-9da59f00-609c-44df-a651-613cb76a34eb.png)
+
+Debouncing functionality where if we enter in Input field it will give you suggestion after entering one one alphabates.
+And append the data as per you are entering the alphabates.
+
+![image](https://user-images.githubusercontent.com/107466839/217160774-ec0afa92-1331-4d80-a7a6-4a33392faf8b.png)
+
